@@ -40,12 +40,12 @@ class OfferViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupNotification()
+//        setupNotification()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        setupNotification()
+//        setupNotification()
     }
     
     private func setupNotification() {
@@ -133,7 +133,7 @@ class OfferViewController: UIViewController {
         view.layer.opacity = 0.6
         let vc = PopUpViewController()
         vc.popUpDownLabel.text = "Offer activated \(saveTimePopUp())"
-        NotificationCenter.default.removeObserver(self)
+//        NotificationCenter.default.removeObserver(self)
         present(vc, animated: true, completion: nil)
         timer.invalidate()
         
