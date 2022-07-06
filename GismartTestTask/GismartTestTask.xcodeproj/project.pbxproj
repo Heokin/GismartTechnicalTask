@@ -20,8 +20,6 @@
 		016943AB286CDE73001D8984 /* OfferConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016943AA286CDE73001D8984 /* OfferConstraint.swift */; };
 		01AE9781286E2560009F064E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AE9780286E2560009F064E /* PopUpViewController.swift */; };
 		01AE9786286E29AB009F064E /* PopUpConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AE9785286E29AB009F064E /* PopUpConstraint.swift */; };
-		01CB995B286D105C0003219D /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB995A286D105C0003219D /* Timer.swift */; };
-		01CB995D286D19360003219D /* TimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB995C286D19360003219D /* TimerExtension.swift */; };
 		01CB995F286DDF660003219D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB995E286DDF660003219D /* UIView.swift */; };
 		01CB9961286DE8870003219D /* TimerStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB9960286DE8870003219D /* TimerStackView.swift */; };
 /* End PBXBuildFile section */
@@ -42,8 +40,6 @@
 		016943AA286CDE73001D8984 /* OfferConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferConstraint.swift; sourceTree = "<group>"; };
 		01AE9780286E2560009F064E /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		01AE9785286E29AB009F064E /* PopUpConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpConstraint.swift; sourceTree = "<group>"; };
-		01CB995A286D105C0003219D /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
-		01CB995C286D19360003219D /* TimerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerExtension.swift; sourceTree = "<group>"; };
 		01CB995E286DDF660003219D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		01CB9960286DE8870003219D /* TimerStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,12 +92,10 @@
 			children = (
 				016943A4286CD44A001D8984 /* PrivacyRestoreTermsStackView.swift */,
 				01CB9960286DE8870003219D /* TimerStackView.swift */,
-				01CB995A286D105C0003219D /* Timer.swift */,
 				0169439F286CC2E7001D8984 /* ButtonActivate.swift */,
 				0169439D286CBD09001D8984 /* Label+.swift */,
 				016943A2286CD0F7001D8984 /* Gradient.swift */,
 				01CB995E286DDF660003219D /* UIView.swift */,
-				01CB995C286D19360003219D /* TimerExtension.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -196,11 +190,9 @@
 			files = (
 				016943AB286CDE73001D8984 /* OfferConstraint.swift in Sources */,
 				01694386286CB2E8001D8984 /* AppDelegate.swift in Sources */,
-				01CB995B286D105C0003219D /* Timer.swift in Sources */,
 				016943A5286CD44A001D8984 /* PrivacyRestoreTermsStackView.swift in Sources */,
 				01CB9961286DE8870003219D /* TimerStackView.swift in Sources */,
 				016943A0286CC2E7001D8984 /* ButtonActivate.swift in Sources */,
-				01CB995D286D19360003219D /* TimerExtension.swift in Sources */,
 				01AE9781286E2560009F064E /* PopUpViewController.swift in Sources */,
 				01AE9786286E29AB009F064E /* PopUpConstraint.swift in Sources */,
 				0169439C286CBB78001D8984 /* OfferViewController.swift in Sources */,
@@ -352,6 +344,7 @@
 				INFOPLIST_FILE = GismartTestTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -380,6 +373,7 @@
 				INFOPLIST_FILE = GismartTestTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

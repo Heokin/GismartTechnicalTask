@@ -13,7 +13,7 @@ final  class Constants {
     public static let shared = Constants()
     
     public var isBig: Bool {
-        if screenSize.height > 927 {
+        if screenSize.width > 927 {
             print("ipad setup")
             return true
         } else {
@@ -23,6 +23,8 @@ final  class Constants {
     }
     
     public var screenSize: CGSize {
+        print(UIScreen.main.bounds.size)
         return UIScreen.main.bounds.size
+        
     }
 }

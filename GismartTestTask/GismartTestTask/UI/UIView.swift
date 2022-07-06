@@ -17,4 +17,13 @@ extension UIView {
         self.translatesAutoresizingMaskIntoConstraints = false
         
     }
+    
+    func createTimerAnimation() {
+        let animation = CATransition()
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        animation.type = CATransitionType.reveal
+        animation.duration = 0.4
+        animation.subtype = .fromBottom
+        layer.add(animation, forKey: CATransitionType.reveal.rawValue)
+    }
 }

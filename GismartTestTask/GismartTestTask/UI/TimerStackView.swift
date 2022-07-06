@@ -54,7 +54,40 @@ final class TimerStackView: UIStackView {
         hourView.addSubview(hourLabel)
         minuteView.addSubview(minuteLabel)
         secondView.addSubview(secondLabel)
-        NSLayoutConstraint.activate([
+        
+        let constraints: [NSLayoutConstraint]
+        
+        let constraintsForBigDisplay = [
+            stack.leadingAnchor.constraint(equalTo: leadingAnchor),
+            stack.trailingAnchor.constraint(equalTo: trailingAnchor),
+            heightAnchor.constraint(equalTo: stack.heightAnchor),
+            
+            dayView.widthAnchor.constraint(equalToConstant: 85),
+            dayView.heightAnchor.constraint(equalToConstant: 57),
+            
+            hourView.widthAnchor.constraint(equalToConstant: 85),
+            hourView.heightAnchor.constraint(equalToConstant: 57),
+            
+            minuteView.widthAnchor.constraint(equalToConstant: 85),
+            minuteView.heightAnchor.constraint(equalToConstant: 57),
+            
+            secondView.widthAnchor.constraint(equalToConstant: 85),
+            secondView.heightAnchor.constraint(equalToConstant: 57),
+            
+            dayLabel.centerXAnchor.constraint(equalTo: dayView.centerXAnchor),
+            dayLabel.centerYAnchor.constraint(equalTo: dayView.centerYAnchor),
+            
+            hourLabel.centerXAnchor.constraint(equalTo: hourView.centerXAnchor),
+            hourLabel.centerYAnchor.constraint(equalTo: hourView.centerYAnchor),
+            
+            minuteLabel.centerXAnchor.constraint(equalTo: minuteView.centerXAnchor),
+            minuteLabel.centerYAnchor.constraint(equalTo: minuteView.centerYAnchor),
+            
+            secondLabel.centerXAnchor.constraint(equalTo: secondView.centerXAnchor),
+            secondLabel.centerYAnchor.constraint(equalTo: secondView.centerYAnchor),
+        ]
+        
+        let constraintsForSmallDisplay = [
             stack.leadingAnchor.constraint(equalTo: leadingAnchor),
             stack.trailingAnchor.constraint(equalTo: trailingAnchor),
             heightAnchor.constraint(equalTo: stack.heightAnchor),
@@ -82,7 +115,15 @@ final class TimerStackView: UIStackView {
             
             secondLabel.centerXAnchor.constraint(equalTo: secondView.centerXAnchor),
             secondLabel.centerYAnchor.constraint(equalTo: secondView.centerYAnchor),
-        ])
+        ]
+      
+        if Constants().isBig {
+            constraints = constraintsForBigDisplay
+        } else {
+            constraints = constraintsForSmallDisplay
+        }
+        
+        NSLayoutConstraint.activate(constraints)
     }
     
     required init(coder: NSCoder) {

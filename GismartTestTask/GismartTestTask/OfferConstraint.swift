@@ -34,23 +34,32 @@ extension OfferViewController {
             imageMusic.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             imageMusic.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.6),
             
-            lastChance.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            lastChance.trailingAnchor.constraint(equalTo: buttonOffer.trailingAnchor),
+            lastChance.bottomAnchor.constraint(equalTo: discount.topAnchor, constant: -20),
+            lastChance.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            lastChance.centerXAnchor.constraint(equalTo: timerStackView.centerXAnchor),
             
-            discount.topAnchor.constraint(equalTo: lastChance.bottomAnchor,constant: 30),
+            discount.bottomAnchor.constraint(equalTo: musicFans.topAnchor,constant: -20),
             discount.centerXAnchor.constraint(equalTo: lastChance.centerXAnchor),
             
-            musicFans.topAnchor.constraint(equalTo: discount.bottomAnchor,constant: 20),
+            musicFans.bottomAnchor.constraint(equalTo: timerStackView.topAnchor,constant: -25),
             musicFans.centerXAnchor.constraint(equalTo: discount.centerXAnchor),
 
-            bottomStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
+            bottomStackView.topAnchor.constraint(equalTo: buttonOffer.bottomAnchor, constant: 30),
             bottomStackView.centerXAnchor.constraint(equalTo: buttonOffer.centerXAnchor),
             
-            buttonOffer.bottomAnchor.constraint(equalTo: bottomStackView.topAnchor, constant: -20),
+            buttonOffer.topAnchor.constraint(equalTo: pocketSong.bottomAnchor, constant: 25),
             buttonOffer.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -95),
             
-            pocketSong.bottomAnchor.constraint(equalTo: buttonOffer.topAnchor, constant: -20),
+            pocketSong.topAnchor.constraint(equalTo: timerStackView.bottomAnchor, constant: 50),
             pocketSong.centerXAnchor.constraint(equalTo: buttonOffer.centerXAnchor),
+            
+            timerStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -95),
+            timerStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            
+            xMarkButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            xMarkButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            xMarkButton.widthAnchor.constraint(equalToConstant: 40),
+            xMarkButton.heightAnchor.constraint(equalToConstant: 40)
             
         ]
         
